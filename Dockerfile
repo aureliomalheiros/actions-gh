@@ -9,4 +9,3 @@ ENV WORDPRESS_DB_HOST=10.58.240.2 \
 
 COPY plugins/* ./wp-content/plugins/
 COPY themes/ /var/www/html/wp-content/themes
-COPY uploads/ /var/www/html/wp-content/uploads
