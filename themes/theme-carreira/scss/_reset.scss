@@ -1,0 +1,120 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: 0;
+    color: #23292e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    font-family: 'Comfortaa';
+    color: $gray-02;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: #F8F9FA;
+    transition: all .4s;
+}
+
+input,
+button,
+textarea {
+    appearance: none;
+}
+
+html {
+    font-size: 16px;
+    @media(max-width: 1366px) {
+        font-size: 14px;
+    }
+    @media(max-width: 1040px) {
+        font-size: 15px;
+    }
+    @media(max-width: 800px) {
+        font-size: 14px;
+    }
+}
+
+#cookie-notice {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    .cookie-notice-container {
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+        max-width: 1246px;
+        margin: 0 auto;
+        .cn-text-container {
+            flex: 1;
+            padding-right: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+            strong {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .cn-privacy-policy-link {
+                font-size: 14px;
+                color: #2a72eb;
+                font-weight: bold;
+                transition: all .3s;
+                text-decoration: underline;
+                &:hover {
+                    color: #2a72eb;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+    .cn-buttons-container {
+        .cn-button {
+            background-color: #2a72eb;
+            font-weight: bold;
+            font-size: 13px;
+            font-family: "Comfortaa";
+            border-radius: 30px;
+            padding: 0px 11px;
+            line-height: 30px;
+            &:first-child {
+                margin-left:  0px;
+            }
+        }
+    }
+    .cn-close-icon {
+        display: none;
+    }
+    @media(max-width: 560px) {
+        .cookie-notice-container {
+            flex-direction: column;
+            align-items: center;
+            .cn-text-container {
+                text-align: center;
+                margin-bottom: 16px;
+                strong {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,473 @@
+.theme-dark {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+
+    p {
+        color: $gray-04;
+    }
+
+    .ctrl-slide {
+        box-shadow: none;
+        background-color: $gray-01;
+
+        .btn {
+            img {
+                display: none;
+            }
+
+            .icon {
+                width: 12px;
+                height: 18px;
+                background-size: cover;
+
+                .icon {
+                    background: url(../img/btn-slide-left-blue-light.svg) no-repeat;
+                }
+            }
+
+            &.btn-prev {
+                .icon {
+                    background: url(../img/btn-slide-left-blue-light.svg) no-repeat;
+                }
+            }
+
+            &.btn-next {
+                .icon {
+                    background: url(../img/btn-slide-right-blue-light.svg) no-repeat;
+                }
+            }
+        }
+    }
+
+    .sub-title {
+        color: $blue-light;
+    }
+
+    body {
+        background-color: $dark-mode;
+        transition: all 0.4s;
+    }
+
+    header {
+        background-color: $dark-mode;
+
+        nav {
+            ul {
+                li {
+                    a {
+                        color: $gray-04;
+
+                        &:hover {
+                            color: $blue-light;
+                        }
+                    }
+
+                    &:after {
+                        border-color: $blue-light;
+                    }
+
+                    &.active {
+                        a {
+                            color: $blue-light;
+                        }
+                    }
+                }
+            }
+
+            .btn-fonte {
+                color: #FFE4E4;
+            }
+        }
+
+        .dropdown {
+            background-color: $dark-mode;
+
+            .config {
+                span {
+                    color: $white;
+                }
+
+                .acoes {
+                    button {
+                        color: $white;
+                    }
+                }
+
+                &.contrast-text {
+                    button {
+                        background-color: $gray-01;
+                        border: 1px solid $blue;
+
+                        &:first-child {
+                            background-color: $white;
+                            color: $gray-01;
+                            border: 1px solid $white;
+
+                            &:hover {
+                                border: 1px solid $blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:before {
+                background-color: $dark-mode;
+            }
+        }
+
+        .menu-mobile {
+            background-color: $dark-mode;
+
+            ul {
+                li {
+                    a {
+                        color: $gray-04;
+                    }
+
+                    &.active {
+                        a {
+                            color: $blue-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .s-principal {
+        .area-slide {
+
+            &:before,
+            &:after {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .s-falando-sobre-nos {
+        h2 {
+            color: $blue-light;
+        }
+    }
+
+    .s-nossa-missao {
+        .container {
+            background-color: $gray-01;
+        }
+
+        .depoimento-ceo {
+            .content-depoimento {
+                .depoimento {
+                    color: $gray-03;
+                }
+
+                .area-ceo {
+                    .info {
+                        .nome {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .s-nossa-lideranca {
+        .container {
+
+            &:before,
+            &:after {
+                opacity: 0.3;
+            }
+        }
+
+        .box-lideranca {
+            background-color: $gray-01;
+
+            p {
+                color: $blue-light;
+            }
+
+            ul {
+                a {
+                    &:hover {
+                        .cargo {
+                            color: $blue-light;
+                        }
+                    }
+                }
+
+                .nome {
+                    color: $white;
+                }
+            }
+
+            &:first-child,
+            &:last-child {
+                ul {
+                    li {
+                        &:first-child {
+                            &:after {
+                                background-color: $gray-02;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                ul {
+                    li {
+
+                        &:first-child,
+                        &:nth-child(2) {
+                            &:after {
+                                background-color: $gray-02;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .s-nossos-valores {
+        .swiper-slide {
+            .text {
+                h2 {
+                    color: $white;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                color: $gray-03;
+
+                &:before {
+                    background-color: $blue-light;
+                }
+            }
+
+            .swiper-pagination-bullet-active {
+                color: $blue-light;
+            }
+        }
+    }
+
+    .s-oportunidades {
+        @include bg-gradient($gray-01, $gray-01);
+
+        .left {
+            .top {
+                .sub-title {
+                    color: $blue-light;
+                }
+            }
+
+            .content {
+                .select {
+                    .select-custom {
+                        .item-selected {
+                            .arrow {
+                                background: url(../img/arrow-down-blue.svg) no-repeat;
+                            }
+                        }
+
+                        .drop-select {
+                            background: $gray-01;
+
+                            li {
+                                a {
+                                    &:hover {
+                                        opacity: 1;
+                                        color: $blue-light;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .newsletter {
+            .mail {
+                background: url(../img/mail-blue.svg) no-repeat;
+            }
+        }
+
+        .card-vaga {
+            background-color: $dark-mode;
+
+            ul {
+                li {
+                    span {
+                        color: $gray-03;
+                    }
+                }
+            }
+        }
+    }
+
+    .s-beneficios {
+        &:after {
+            background: $dark-mode;
+        }
+
+        .top {
+            p {
+                color: $gray-03;
+            }
+        }
+
+        .box-beneficios {
+            box-shadow: none;
+            background-color: $gray-01;
+        }
+    }
+
+    .s-etapas {
+        @include gradient($gray-01, $gray-01);
+
+        &:before,
+        &:after {
+            opacity: 0.3;
+        }
+
+        .box-etapa {
+            background-color: $dark-mode;
+        }
+    }
+
+    .s-escritorio {
+
+        .navegacao-tabs {
+            border-bottom: 1px solid $gray-02;
+
+            li {
+                a {
+                    &.active {
+                        color: $blue-light;
+                    }
+                }
+            }
+        }
+
+        .tab-pane {
+            .texto {
+                h4 {
+                    color: $gray-03;
+                }
+
+                a {
+                    span {
+                        color: $blue-light;
+                    }
+
+                    .icon {
+                        background: url(../img/arrow-link-light.svg) no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .s-time {
+        .ctrl-slide {
+            .btn {
+                background-color: $gray-01;
+
+                img {
+                    display: block !important;
+                }
+            }
+        }
+    }
+
+    footer {
+        border-color: $gray-02;
+
+        .content {
+
+            .item {
+                strong {
+                    color: $white;
+                }
+
+            }
+
+            ul {
+                li {
+                    color: $white;
+
+                    strong {
+                        color: $white;
+                    }
+
+                    a {
+                        color: $gray-03;
+
+                        &:hover {
+                            color: $blue-light;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    li {
+                        a {
+                            color: $gray-03 !important;
+                            filter: grayscale(100%);
+
+                            &:hover {
+                                filter: grayscale(0%);
+                                color: $magenta !important;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    li {
+                        a {
+                            color: $gray-03 !important;
+                        }
+
+                        &:hover {
+                            &:nth-child(2) {
+                                a {
+                                    color: #0CAA41 !important;
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                a {
+                                    color: #2164F3 !important;
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                a {
+                                    color: #3E50B3 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $gray-03;
+        }
+    }
+}

@@ -15,3 +15,4 @@ ENV WORDPRESS_DB_HOST=${WP_HOST} \
 
 COPY plugins/* ./wp-content/plugins/
 COPY themes/ /var/www/html/wp-content/themes
+COPY uploads/ /var/www/html/wp-content/uploads

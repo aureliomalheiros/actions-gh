@@ -1,0 +1,38 @@
+@mixin style_btn_blue($width, $height) {
+    width: $width;
+    height: $height;
+
+    border: 1px solid $blue-dark;
+    background-color: $blue-dark;
+    border-radius: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s;
+
+    span{
+        font: bold 15px 'Comfortaa';
+        letter-spacing: -0.01em;
+        color:$white;
+
+        transition: color .3s;
+    }
+
+    &:hover {
+        background-color: transparent;
+        transition: all .3s;
+        span{
+            color: $blue-dark;
+        }
+    }
+}
+
+@mixin gradient($corInicio, $corFim) {
+    background: linear-gradient(180deg, $corInicio 0%, $corFim 100%);
+}
+
+@mixin bg-gradient($corInicio, $corFim) {
+    background: linear-gradient(100.87deg, $corInicio 0.88%, $corFim 132.6%);
+}
