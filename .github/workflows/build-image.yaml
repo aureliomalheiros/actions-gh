@@ -1,6 +1,6 @@
 name: Build image Dockerfile
 
-on: [push, pull_request]
+on: [push]
 
 #Global variables
 env:
@@ -11,6 +11,7 @@ env:
   WP_PASSWORD: ${{ secrets.WP_PASSWORD }}
   DB_NAME: ${{ secrets.DB_NAME }}
   WP_PREFIX: ${{ secrets.WP_PREFIX }}
+  DB_USER: ${{ secrets.DB_USER }}
   
 jobs:
   build_and_push_image:
@@ -33,3 +34,4 @@ jobs:
             WP_PASSWORD=${{ secrets.WP_PASSWORD }}
             DB_NAME=${{ secrets.DB_NAME }}
             WP_PREFIX=${{ secrets.WP_PREFIX }}
+            DB_USER=${{ secrets.DB_USER }}
