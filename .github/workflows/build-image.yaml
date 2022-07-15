@@ -1,6 +1,9 @@
 name: Build image Dockerfile
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
 
 #Global variables
 env:
